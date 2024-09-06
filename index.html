@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Web Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>My Web Project</h1>
+
+    <div>
+      <label for="filter">Filter: </label>
+      <select id="filter" onchange="filterCards()">
+        <option value="all">All</option>
+        <option value="category1">Category 1</option>
+        <option value="category2">Category 2</option>
+      </select>
+    </div>
+
+    <div id="card-container"></div>
+
+    <div id="subscription-box" class="hidden">
+      <p>Subscribe to our updates!</p>
+      <button id="subscribe-button">Subscribe</button>
+      <button id="close-subscription-button">Close</button>
+    </div>
+
+    <div id="ad-box" class="hidden">
+      <p>Check out our offer!</p>
+      <button id="close-ad-button">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
